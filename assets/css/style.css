@@ -182,6 +182,7 @@ body {
 
 .content__inner {
   height: 75vh;
+
 }
 
 .content__aside {
@@ -252,4 +253,271 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+
+/* Main */
+
+.content__main {
+  display: grid;
+  grid-template-columns: 596.66px 596.66px;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 25px;
+  color: #404040;
+}
+
+.card-holder__title {
+  font-weight: 700;
+  font-size: 17px;
+  color: #FFFFFF;
+}
+
+.card-holder__text {
+  font-family: 'Lato';
+  font-weight: 700;
+  font-size: 8px;
+  line-height: 9px;
+  color: #FFFFFF;
+}
+
+.card-holder__count {
+  font-family: 'Quicksand';
+  font-weight: 500;
+  font-size: 21px;
+  color: #fff;
+}
+
+.card-holder__wrapper_title {
+  font-family: 'Lato';
+  font-weight: 500;
+  font-size: 7px;
+  line-height: 9px;
+  color: #fff;
+}
+
+.card-holder__user_text {
+  color: #fff;
+}
+
+.balance__num {
+  font-family: 'Lato';
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 37px;
+}
+
+.balance__num_current {
+  color: #197BBD;
+}
+
+.balance__num_income {
+  color: #439A86;
+}
+
+.balance__num_outcome {
+  color: #BB4430;
+}
+
+.balance__text {
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.payment-limit__text {
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.payment-limit__count {
+  font-family: 'Lato';
+  font-weight: 600;
+  font-size: 14px;
+  color: #404040;
+}
+
+.table__reciever {
+  color: #404040;
+}
+
+.table__tesco::before {
+  content: url(../icons/tesco-market.svg);
+  position: relative;
+  top: 4px;
+  padding-right: 5px;
+}
+
+.table__electromen::before {
+  content: url(../icons/electromen-market.svg);
+  position: relative;
+  top: 4px;
+  padding-right: 5px;
+}
+
+.table__fiorgio::before {
+  content: url(../icons/fiorgio-restaurant.svg);
+  position: relative;
+  top: 4px;
+  padding-right: 5px;
+}
+
+.table__john::before {
+  content: url(../icons/john-mathew-kayne.svg);
+  position: relative;
+  top: 4px;
+  padding-right: 5px;
+}
+
+.table__ann::before {
+  content: url(../icons/ann-marlin.svg);
+  position: relative;
+  top: 4px;
+  padding-right: 5px;
+}
+
+.amount {
+  color: #404040;
+}
+
+th,
+td {
+  padding: 12px 0;
+}
+
+td:nth-child(1),
+td:nth-child(2),
+td:nth-child(3) {
+  padding-right: 30px;
+}
+
+tr {
+  border-bottom: 0.5px solid #ECECEC;
+}
+
+.transaction-history {
+  box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.06), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
+  border-radius: 19.0044px;
+  padding: 18px 25px;
+}
+
+.transaction-history__title {
+  margin-bottom: 18px;
+}
+
+.cards__card-holder {
+  border-right: 1px solid #E8E8E8;
+}
+
+.cards__card-holder_wrapper {
+  width: 320px;
+  height: 206px;
+  background-color: #197BBD;
+  border-radius: 26px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-right: 1px solid #E8E8E8;
+}
+
+.cards__items {
+  display: grid;
+  grid-template-columns: 360px auto;
+  grid-gap: 17.5px;
+  margin-bottom: 18px;
+}
+
+.card-holder__wrapper {
+  display: flex;
+}
+
+.card-holder__user {
+  margin-right: 45px;
+}
+
+.cards__weekly {
+  display: grid;
+  grid-template-columns: 360px auto;
+  grid-gap: 17.5px;
+}
+
+.cards {
+  background: linear-gradient(180deg, #FFFFFF 0%, #FFFFFF 100%);
+  /* 1 */
+
+  box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.06), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
+  border-radius: 28px;
+  padding: 13px 24px;
+}
+
+.cards__content {
+  padding: 13px;
+}
+
+.weekly__payment-limit {
+  width: 320px;
+  padding-top: 14px;
+  position: relative;
+}
+
+.payment-limit__wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.payment-limit__item {
+  width: 100%;
+  height: 9px;
+  background: #F1F1F1;
+  border-radius: 13.617px;
+  margin-bottom: 10px;
+}
+
+.payment-limit__item-2 {
+  height: 9px;
+  width: 69.25px;
+  background-color: #197BBD;
+  border-radius: 10.7766px;
+  position: absolute;
+  left: 0;
+  top: 14px;
+}
+
+.balance__current {
+  margin-bottom: 13px;
+}
+
+.weekly__deacivate-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+.deactivate-card__active {
+  width: 46px;
+  height: 23px;
+  background-color: #EBEBEB;
+  border-radius: 13.617px;
+}
+
+.deactivate-card__active_btn {
+  width: 23px;
+  height: 23px;
+  background-color: #CDCDCD;
+  border-radius: 13.617px;
+  position: absolute;
+  top: 0;
+}
+
+.deactivate-card__items {
+  padding-bottom: 10px;
+}
+
+.cards__balance {
+  text-align: right;
 }
