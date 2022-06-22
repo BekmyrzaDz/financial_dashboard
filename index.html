@@ -11,27 +11,49 @@
 </head>
 
 <body>
-  <div class="wrapper">
-
-    <aside class="aside">
-      <!-- <div class="container-left"> -->
-      <div class="aside__inner">
-        <header class="header">
-          <div class="container-left">
-            <div class="header__aside">
-              <img class="logo header__logo" src="assets/icons/logo.svg" alt="">
+  <div class="wrap">
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__inner">
+          <div class="header__logo">
+            <img class="logo header__img" src="assets/icons/logo.svg" alt="">
+          </div>
+          <div class="header__right">
+            <div class="header__descr">
+              <h1 class="header__title">
+                Weekly sumup
+              </h1>
+              <p class="header__text">
+                Get summary of your weekly online transactions here.
+              </p>
+            </div>
+            <div class="header__profile">
+              <img class="profile__mail" src="assets/icons/mail.svg" alt="">
+              <img class="profile__bell" src="assets/icons/bell.svg" alt="">
+              <div class="profile__user">
+                <div class="user__icon">
+                  <img class="user__icon-img" src="assets/icons/user.svg" alt="">
+                </div>
+                <div class="user__wrapper">
+                  <h5 class="user__name">Andrew</h5>
+                  <p class="user__status">Admin account</p>
+                </div>
+              </div>
             </div>
           </div>
-        </header>
+        </div>
+      </header>
 
-        <div class="content">
-          <div class="container-left">
-            <div class="content__inner content__aside">
-              <nav class="menu">
-                <ul class="menu__list">
-                  <a class="menu__link" href="#">
-                    <li class="menu__item menu__overview">
-                      <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <main class="main">
+
+        <aside class="aside">
+          <div class="aside__inner">
+            <nav class="menu">
+              <ul class="menu__list">
+                <a class="menu__link" href="#">
+                  <li class="menu__item menu__overview">
+                    <div class="menu__icon">
+                      <svg width="30" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path id="icon" d="M1.75787 19.0048L1.75787 1.92108" stroke="#197BBD" stroke-width="2"
                           stroke-linecap="round" stroke-linejoin="round" />
                         <path id="icon" d="M1.75767 19.0046L18.8414 19.0046" stroke="#197BBD" stroke-width="2"
@@ -40,11 +62,13 @@
                           d="M5.5943 12.0974C7.82196 10.0627 9.41983 8.8993 11.2216 7.28387L12.3399 11.6643L17.2127 7.55684"
                           stroke="#197BBD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                       </svg>
-                      <span>Overview</span>
-                    </li>
-                  </a>
-                  <a class="menu__link" href="#">
-                    <li class="menu__item menu__transactions">
+                    </div>
+                    <span>Overview</span>
+                  </li>
+                </a>
+                <a class="menu__link" href="#">
+                  <li class="menu__item menu__transactions">
+                    <div class="menu__icon">
                       <svg width="20" height="15" viewBox="0 0 20 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path id="icon" d="M6.49078 1.74953H18.8701" stroke="#C7C7C7" stroke-width="2"
                           stroke-linecap="round" stroke-linejoin="round" />
@@ -59,11 +83,13 @@
                         <path id="icon" d="M1.72955 13.1765H1.73812" stroke="#C7C7C7" stroke-width="2"
                           stroke-linecap="round" stroke-linejoin="round" />
                       </svg>
-                      <span>Transactions</span>
-                    </li>
-                  </a>
-                  <a class="menu__link" href="#">
-                    <li class="menu__item menu__cards">
+                    </div>
+                    <span>Transactions</span>
+                  </li>
+                </a>
+                <a class="menu__link" href="#">
+                  <li class="menu__item menu__cards">
+                    <div class="menu__icon">
                       <svg width="21" height="17" viewBox="0 0 21 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                           d="M17.6634 1.46317H2.93611C2.03237 1.46317 1.29974 2.24667 1.29974 3.21317V13.7132C1.29974 14.6797 2.03237 15.4632 2.93611 15.4632H17.6634C18.5671 15.4632 19.2997 14.6797 19.2997 13.7132V3.21317C19.2997 2.24667 18.5671 1.46317 17.6634 1.46317Z"
@@ -71,11 +97,13 @@
                         <path d="M1.29974 6.46317H19.2997" stroke="#C7C7C7" stroke-width="2" stroke-linecap="round"
                           stroke-linejoin="round" />
                       </svg>
-                      <span>Cards</span>
-                    </li>
-                  </a>
-                  <a class="menu__link" href="#">
-                    <li class="menu__item menu__invoices">
+                    </div>
+                    <span>Cards</span>
+                  </li>
+                </a>
+                <a class="menu__link" href="#">
+                  <li class="menu__item menu__invoices">
+                    <div class="menu__icon">
                       <svg width="16" height="19" viewBox="0 0 16 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                           d="M9.90114 1.45601H3.49551C3.07079 1.45601 2.66347 1.62473 2.36315 1.92505C2.06282 2.22537 1.8941 2.6327 1.8941 3.05742V15.8687C1.8941 16.2934 2.06282 16.7007 2.36315 17.001C2.66347 17.3014 3.07079 17.4701 3.49551 17.4701H13.104C13.5287 17.4701 13.936 17.3014 14.2363 17.001C14.5366 16.7007 14.7054 16.2934 14.7054 15.8687V6.26023L9.90114 1.45601Z"
@@ -83,11 +111,13 @@
                         <path d="M9.90125 1.45578V6.26H14.7055" stroke="#C7C7C7" stroke-width="2" stroke-linecap="round"
                           stroke-linejoin="round" />
                       </svg>
-                      <span>Invoices</span>
-                    </li>
-                  </a>
-                  <a class="menu__link" href="#">
-                    <li class="menu__item menu__goals">
+                    </div>
+                    <span>Invoices</span>
+                  </li>
+                </a>
+                <a class="menu__link" href="#">
+                  <li class="menu__item menu__goals">
+                    <div class="menu__icon">
                       <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                           d="M12.2996 14.9139C15.4581 14.9139 18.0185 12.3535 18.0185 9.19499C18.0185 6.03651 15.4581 3.47605 12.2996 3.47605C9.14108 3.47605 6.58063 6.03651 6.58063 9.19499C6.58063 12.3535 9.14108 14.9139 12.2996 14.9139Z"
@@ -95,11 +125,13 @@
                         <path d="M9.20316 14.683L8.2146 22.1258L12.2996 19.6749L16.3845 22.1258L15.396 14.6749"
                           stroke="#C7C7C7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                       </svg>
-                      <span>Goals</span>
-                    </li>
-                  </a>
-                  <a class="menu__link" href="#">
-                    <li class="menu__item menu__settings">
+                    </div>
+                    <span>Goals</span>
+                  </li>
+                </a>
+                <a class="menu__link" href="#">
+                  <li class="menu__item menu__settings">
+                    <div class="menu__icon">
                       <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                           d="M10.3 12.7785C11.5785 12.7785 12.6149 11.742 12.6149 10.4635C12.6149 9.18503 11.5785 8.1486 10.3 8.1486C9.02148 8.1486 7.98505 9.18503 7.98505 10.4635C7.98505 11.742 9.02148 12.7785 10.3 12.7785Z"
@@ -108,327 +140,331 @@
                           d="M16.01 12.7783C15.9072 13.011 15.8766 13.2692 15.922 13.5195C15.9674 13.7698 16.0867 14.0008 16.2646 14.1827L16.3109 14.229C16.4544 14.3723 16.5682 14.5425 16.6459 14.7298C16.7235 14.9172 16.7635 15.118 16.7635 15.3208C16.7635 15.5236 16.7235 15.7245 16.6459 15.9118C16.5682 16.0992 16.4544 16.2694 16.3109 16.4127C16.1676 16.5562 15.9974 16.67 15.81 16.7477C15.6227 16.8254 15.4218 16.8653 15.219 16.8653C15.0162 16.8653 14.8154 16.8254 14.628 16.7477C14.4407 16.67 14.2705 16.5562 14.1271 16.4127L14.0808 16.3664C13.899 16.1885 13.668 16.0692 13.4177 16.0238C13.1674 15.9784 12.9092 16.009 12.6765 16.1118C12.4482 16.2096 12.2536 16.372 12.1165 16.579C11.9794 16.786 11.9058 17.0286 11.9048 17.2769V17.4081C11.9048 17.8174 11.7422 18.21 11.4528 18.4994C11.1634 18.7888 10.7708 18.9514 10.3615 18.9514C9.95222 18.9514 9.55967 18.7888 9.27025 18.4994C8.98083 18.21 8.81823 17.8174 8.81823 17.4081V17.3387C8.81226 17.0833 8.72959 16.8356 8.58096 16.6278C8.43234 16.42 8.22463 16.2617 7.98486 16.1735C7.75212 16.0708 7.49394 16.0401 7.24363 16.0855C6.99331 16.1309 6.76233 16.2502 6.58047 16.4281L6.53417 16.4744C6.39084 16.6179 6.22063 16.7318 6.03328 16.8094C5.84593 16.8871 5.6451 16.9271 5.44229 16.9271C5.23948 16.9271 5.03866 16.8871 4.8513 16.8094C4.66395 16.7318 4.49374 16.6179 4.35041 16.4744C4.20693 16.3311 4.09309 16.1609 4.01543 15.9735C3.93776 15.7862 3.89779 15.5854 3.89779 15.3826C3.89779 15.1797 3.93776 14.9789 4.01543 14.7916C4.09309 14.6042 4.20693 14.434 4.35041 14.2907L4.39671 14.2444C4.57461 14.0625 4.69394 13.8315 4.73933 13.5812C4.78471 13.3309 4.75407 13.0727 4.65136 12.84C4.55354 12.6118 4.39112 12.4171 4.1841 12.28C3.97707 12.1429 3.73448 12.0693 3.48617 12.0683H3.35499C2.94569 12.0683 2.55315 11.9058 2.26373 11.6163C1.9743 11.3269 1.81171 10.9344 1.81171 10.5251C1.81171 10.1158 1.9743 9.72321 2.26373 9.43379C2.55315 9.14437 2.94569 8.98177 3.35499 8.98177H3.42444C3.67985 8.9758 3.92756 8.89313 4.13536 8.7445C4.34316 8.59588 4.50144 8.38817 4.58962 8.1484C4.69234 7.91566 4.72298 7.65748 4.6776 7.40717C4.63221 7.15685 4.51287 6.92587 4.33498 6.74401L4.28868 6.69771C4.14519 6.55438 4.03136 6.38417 3.9537 6.19682C3.87603 6.00947 3.83606 5.80864 3.83606 5.60583C3.83606 5.40302 3.87603 5.2022 3.9537 5.01484C4.03136 4.82749 4.14519 4.65728 4.28868 4.51395C4.43201 4.37047 4.60222 4.25663 4.78957 4.17897C4.97692 4.1013 5.17775 4.06133 5.38056 4.06133C5.58337 4.06133 5.78419 4.1013 5.97155 4.17897C6.1589 4.25663 6.32911 4.37047 6.47244 4.51395L6.51873 4.56025C6.70059 4.73815 6.93158 4.85748 7.18189 4.90287C7.43221 4.94825 7.69039 4.91761 7.92313 4.8149H7.98486C8.21309 4.71708 8.40773 4.55466 8.54483 4.34764C8.68194 4.14061 8.75551 3.89802 8.7565 3.64971V3.51853C8.7565 3.10923 8.9191 2.71669 9.20852 2.42726C9.49794 2.13784 9.89048 1.97525 10.2998 1.97525C10.7091 1.97525 11.1016 2.13784 11.3911 2.42726C11.6805 2.71669 11.8431 3.10923 11.8431 3.51853V3.58798C11.8441 3.83629 11.9176 4.07888 12.0547 4.28591C12.1918 4.49293 12.3865 4.65535 12.6147 4.75316C12.8475 4.85588 13.1056 4.88652 13.356 4.84114C13.6063 4.79575 13.8373 4.67641 14.0191 4.49852L14.0654 4.45222C14.2087 4.30873 14.3789 4.1949 14.5663 4.11724C14.7537 4.03957 14.9545 3.9996 15.1573 3.9996C15.3601 3.9996 15.5609 4.03957 15.7483 4.11724C15.9356 4.1949 16.1058 4.30873 16.2492 4.45222C16.3927 4.59555 16.5065 4.76576 16.5841 4.95311C16.6618 5.14046 16.7018 5.34129 16.7018 5.5441C16.7018 5.74691 16.6618 5.94773 16.5841 6.13509C16.5065 6.32244 16.3927 6.49265 16.2492 6.63598L16.2029 6.68227C16.025 6.86413 15.9056 7.09512 15.8603 7.34543C15.8149 7.59575 15.8455 7.85393 15.9482 8.08667V8.1484C16.046 8.37663 16.2085 8.57127 16.4155 8.70837C16.6225 8.84548 16.8651 8.91905 17.1134 8.92004H17.2446C17.6539 8.92004 18.0464 9.08264 18.3359 9.37206C18.6253 9.66148 18.7879 10.054 18.7879 10.4633C18.7879 10.8726 18.6253 11.2652 18.3359 11.5546C18.0464 11.844 17.6539 12.0066 17.2446 12.0066H17.1751C16.9268 12.0076 16.6842 12.0812 16.4772 12.2183C16.2702 12.3554 16.1078 12.55 16.01 12.7783V12.7783Z"
                           stroke="#C7C7C7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                       </svg>
-                      <span>Settings</span>
-                    </li>
-                  </a>
-                </ul>
-              </nav>
-              <div class="aside__bottom">
-                <img class="bottom__img" src="assets/icons/cloud-cash.svg" alt="">
-                <p class="bottom-text">
-                  Give your money
-                  awesome space in cloud
-                </p>
-                <button class="bottom-btn">Upgrade to premium</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- </div> -->
-    </aside>
-    <main class="main">
-      <header class="header">
-        <div class="container">
-          <div class="header__inner">
-            <div class="header__descr">
-              <h1 class="header__title">
-                Weekly sumup
-              </h1>
-              <p class="header__text">
-                Get summary of your weekly online transactions here.
+                    </div>
+                    <span>Settings</span>
+                  </li>
+                </a>
+              </ul>
+            </nav>
+            <div class="aside__bottom">
+              <img class="bottom__img" src="assets/icons/cloud-cash.svg" alt="">
+              <p class="bottom-text">
+                Give your money
+                awesome space in cloud
               </p>
-            </div>
-            <div class="header__profile">
-              <img class="profile__mail" src="assets/icons/mail.svg" alt="">
-              <img class="profile__bell" src="assets/icons/bell.svg" alt="">
-              <div class="profile__user">
-                <img class="user__icon" src="assets/icons/user.svg" alt="">
-                <div class="user__wrapper">
-                  <h5 class="user__name">Andrew</h5>
-                  <p class="user__status">Admin account</p>
-                </div>
-              </div>
+              <button class="button bottom-btn">Upgrade to premium</button>
             </div>
           </div>
-      </header>
+        </aside>
 
-      <div class="content">
-        <div class="container">
+        <div class="content">
           <div class="content__inner content__main">
             <div class="content__box-1">
 
               <section class="cards">
-                <h3 class="title">Cards</h3>
-                <div class="cards__content">
-                  <div class="cards__items">
+                <div class="cards__inner">
+                  <h3 class="title">Cards</h3>
+                  <div class="cards__content">
+                    <div class="cards__items">
 
-                    <div class="cards__card-holder">
+                      <div class="cards__card-holder">
 
-                      <div class="cards__card-holder_wrapper">
-                        <div class="card-holder__descr">
-                          <h5 class="card-holder__title">cloudcash</h5>
-                          <p class="card-holder__text">PREMIUM ACCOUNT</p>
+                        <div class="cards__card-holder_wrapper">
+                          <div class="card-holder__descr">
+                            <h5 class="card-holder__title">cloudcash</h5>
+                            <p class="card-holder__text">PREMIUM ACCOUNT</p>
+                          </div>
+                          <!-- <div class="card-holder__count"> -->
+                          <p class="card-holder__count count__text">
+                            5789 &ensp; * * * * &ensp; * * * * &ensp; 2847
+                          </p>
+                          <!-- </div> -->
+                          <div class="card-holder__wrapper">
+                            <div class="card-holder__user">
+                              <p class="card-holder__wrapper_title">Card holder</p>
+                              <p class="card-holder__user_text card-holder__user_name">Mike Smith</p>
+                            </div>
+                            <div class="card-holder__expire">
+                              <p class="card-holder__wrapper_title">
+                                Expire date
+                              </p>
+                              <p class="card-holder__user_text card-holder__date">
+                                06/21
+                              </p>
+                            </div>
+                          </div>
                         </div>
-                        <!-- <div class="card-holder__count"> -->
-                        <p class="card-holder__count count__text">
-                          5789 &ensp; * * * * &ensp; * * * * &ensp; 2847
+
+                      </div>
+
+                      <div class="cards__balance">
+                        <div class="balance__current">
+                          <p class="balance__num balance__num_current">$ 2850.75</p>
+                          <p class="balance__text">Current balance</p>
+                        </div>
+                        <div class="balance__income">
+                          <p class="balance__num balance__num_income">$ 1500.50</p>
+                          <p class="balance__text">Income</p>
+                        </div>
+                        <div class="balance__outcome">
+                          <p class="balance__num balance__num_outcome">$ 350.60</p>
+                          <p class="balance__text">Outcome</p>
+                        </div>
+                      </div>
+
+                    </div>
+
+                    <div class="cards__weekly">
+                      <div class="weekly__payment-limit_wrapper">
+                        <div class="weekly__payment-limit">
+                          <div class="payment-limit__item"></div>
+                          <div class="payment-limit__item-2"></div>
+                          <div class="payment-limit__wrapper">
+                            <p class="payment-limit__text">
+                              Weekly payment limit
+                            </p>
+                            <p class="payment-limit__count">
+                              $350.60 / $4000
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="weekly__deacivate-card">
+                        <div class="deactivate-card__items">
+                          <div class="deactivate-card__active"></div>
+                          <div class="deactivate-card__active_btn"></div>
+                        </div>
+                        <p class="deactivate-card__text">
+                          Deacivate card
                         </p>
-                        <!-- </div> -->
-                        <div class="card-holder__wrapper">
-                          <div class="card-holder__user">
-                            <p class="card-holder__wrapper_title">Card holder</p>
-                            <p class="card-holder__user_text card-holder__user_name">Mike Smith</p>
-                          </div>
-                          <div class="card-holder__expire">
-                            <p class="card-holder__wrapper_title">
-                              Expire date
-                            </p>
-                            <p class="card-holder__user_text card-holder__date">
-                              06/21
-                            </p>
-                          </div>
-                        </div>
                       </div>
-
-                    </div>
-
-                    <div class="cards__balance">
-                      <div class="balance__current">
-                        <p class="balance__num balance__num_current">$ 2850.75</p>
-                        <p class="balance__text">Current balance</p>
-                      </div>
-                      <div class="balance__income">
-                        <p class="balance__num balance__num_income">$ 1500.50</p>
-                        <p class="balance__text">Income</p>
-                      </div>
-                      <div class="balance__outcome">
-                        <p class="balance__num balance__num_outcome">$ 350.60</p>
-                        <p class="balance__text">Outcome</p>
-                      </div>
-                    </div>
-
-                  </div>
-
-                  <div class="cards__weekly">
-                    <div class="weekly__payment-limit_wrapper">
-                      <div class="weekly__payment-limit">
-                        <div class="payment-limit__item"></div>
-                        <div class="payment-limit__item-2"></div>
-                        <div class="payment-limit__wrapper">
-                          <p class="payment-limit__text">
-                            Weekly payment limit
-                          </p>
-                          <p class="payment-limit__count">
-                            $350.60 / $4000
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="weekly__deacivate-card">
-                      <div class="deactivate-card__items">
-                        <div class="deactivate-card__active"></div>
-                        <div class="deactivate-card__active_btn"></div>
-                      </div>
-                      <p class="deactivate-card__text">
-                        Deacivate card
-                      </p>
                     </div>
                   </div>
-                </div>
-                <div class="cards__items">
-                  <div class="cards__item"></div>
-                  <div class="cards__item"></div>
+                  <div class="cards__items">
+                    <div class="cards__item"></div>
+                    <div class="cards__item"></div>
+                  </div>
                 </div>
               </section>
               <section class="transaction-history">
-                <h3 class="title transaction-history__title">Transaction history</h3>
-                <table class="table">
-                  <thead>
-                    <tr>
-                      <td class="table__title">Reciever</td>
-                      <td class="table__title">Type</td>
-                      <td class="table__title">Date</td>
-                      <td class="table__title">Amount</td>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td class="table__reciever table__tesco">Tesco Market</td>
-                      <td>Shopping</td>
-                      <td>13 Dec 2020</td>
-                      <td class="amount">$75.67</td>
-                    </tr>
-                    <tr>
-                      <td class="table__reciever table__electromen">ElectroMen Market</td>
-                      <td>Shopping</td>
-                      <td>14 Dec 2020</td>
-                      <td class="amount">$250.00</td>
-                    </tr>
-                    <tr>
-                      <td class="table__reciever table__fiorgio">Fiorgio Restaurant</td>
-                      <td>Food</td>
-                      <td>07 Dec 2020</td>
-                      <td class="amount">$19.50</td>
-                    </tr>
-                    <tr>
-                      <td class="table__reciever table__john">John Mathew Kayne</td>
-                      <td>Sport</td>
-                      <td>06 Dec 2020</td>
-                      <td class="amount">$350</td>
-                    </tr>
-                    <tr>
-                      <td class="table__reciever table__ann">Ann Marlin</td>
-                      <td>Shopping</td>
-                      <td>31 Nov 2020</td>
-                      <td class="amount">$430</td>
-                    </tr>
-                  </tbody>
-                </table>
+                <div class="transaction-history__inner">
+                  <h3 class="title transaction-history__title">Transaction history</h3>
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <td class="table__title">Reciever</td>
+                        <td class="table__title">Type</td>
+                        <td class="table__title">Date</td>
+                        <td class="table__title">Amount</td>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="table__reciever table__tesco">Tesco Market</td>
+                        <td>Shopping</td>
+                        <td>13 Dec 2020</td>
+                        <td class="amount">$75.67</td>
+                      </tr>
+                      <tr>
+                        <td class="table__reciever table__electromen">ElectroMen Market</td>
+                        <td>Shopping</td>
+                        <td>14 Dec 2020</td>
+                        <td class="amount">$250.00</td>
+                      </tr>
+                      <tr>
+                        <td class="table__reciever table__fiorgio">Fiorgio Restaurant</td>
+                        <td>Food</td>
+                        <td>07 Dec 2020</td>
+                        <td class="amount">$19.50</td>
+                      </tr>
+                      <tr>
+                        <td class="table__reciever table__john">John Mathew Kayne</td>
+                        <td>Sport</td>
+                        <td>06 Dec 2020</td>
+                        <td class="amount">$350</td>
+                      </tr>
+                      <tr>
+                        <td class="table__reciever table__ann">Ann Marlin</td>
+                        <td>Shopping</td>
+                        <td>31 Nov 2020</td>
+                        <td class="amount">$430</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
               </section>
             </div>
 
             <div class="content__box-2">
               <section class="goals">
-                <h3 class="title">Goals</h3>
-                <div class="goals__content">
-                  <div class="goals__item goals__holidays">
-                    <div class="holidays__item">
-                      <span>$550</span>
-                      12/20/20
+                <div class="goals__inner">
+                  <h3 class="title goals__title">Goals</h3>
+                  <div class="goals__content">
+                    <div class="goals__item goals__holidays">
+                      <div class="holidays__item">
+                        <p class="holidays__item-money">$550</p>
+                        <p class="holidays__item-date">12/20/20</p>
+                      </div>
+                      <div class="holidays__item">
+                        <img class="holidays__icon" src="assets/icons/maki_mountain-15.svg" alt="">
+                        <p class="holidays__item-name">Holidays</p>
+                      </div>
                     </div>
-                    <div class="holidays__item">
-                      <img class="holidays__icon" src="assets/icons/maki_mountain-15.svg" alt="">
-                      <p class="holidays__text">Holidays</p>
+                    <div class="goals__item goals__renovation">
+                      <div class="holidays__item">
+                        <p class="holidays__item-money">$200</p>
+                        <p class="holidays__item-date">12/20/20</p>
+                      </div>
+                      <div class="holidays__item">
+                        <img class="holidays__icon" src="assets/icons/maki_mountain-renovation.svg" alt="">
+                        <p class="holidays__item-name">Renovation</p>
+                      </div>
                     </div>
-                  </div>
-                  <div class="goals__item goals__renovation">
-                    <div class="holidays__item">
-                      <span>$200</span>
-                      12/20/20
-                    </div>
-                    <div class="holidays__item">
-                      <img class="holidays__icon" src="assets/icons/maki_mountain-15.svg" alt="">
-                      <p class="holidays__text">Renovation</p>
-                    </div>
-                  </div>
-                  <div class="goals__item goals__xbox">
-                    <div class="holidays__item">
-                      <span>$550</span>
-                      12/20/20
-                    </div>
-                    <div class="holidays__item">
-                      <img class="holidays__icon" src="assets/icons/maki_mountain-15.svg" alt="">
-                      <p class="holidays__text">Xbox</p>
+                    <div class="goals__item goals__xbox">
+                      <div class="holidays__item">
+                        <p class="holidays__item-money">$550</p>
+                        <p class="holidays__item-date">12/20/20</p>
+                      </div>
+                      <div class="holidays__item">
+                        <img class="holidays__icon" src="assets/icons/maki_mountain-xbox.svg" alt="">
+                        <p class="holidays__item-name">Xbox</p>
+                      </div>
                     </div>
                   </div>
                 </div>
               </section>
               <section class="statistics">
-                <h3 class="title">Outcome Statistics</h3>
-                <div class="statistics__content">
-                  <div class="statistics__item statistics__shoppping">
-                    <img class="statistics__img" src="assets/icons/Shoppping.svg" alt="">
-                    <div class="staistics__line">
-                      <div class="statistics__line_item"></div>
-                      <div class="statistics__line_text">
-                        Shoppping
+                <div class="statistics__inner">
+                  <h3 class="title">Outcome Statistics</h3>
+                  <div class="statistics__content">
+                    <div class="statistics__item statistics__shoppping">
+                      <div class="statistics__img_wrapper statistics__img_shopping">
+                        <img class="statistics__img" src="assets/icons/shopping.svg" alt="">
                       </div>
-                    </div>
-                    <p class="statistics__percent">52%</p>
-                  </div>
-                  <div class="statistics__item">
-                    <img class="statistics__img" src="assets/icons/Electronics.svg" alt="">
-                    <div class="staistics__line">
-                      <div class="statistics__line_item"></div>
-                      <div class="statistics__line_text">
-                        Electronics
+                      <div class="statistics__line">
+                        <div class="statistics__line_item"></div>
+                        <div class="statistics__line_item-1"></div>
+                        <div class="statistics__line_text">
+                          Shoppping
+                        </div>
                       </div>
+                      <p class="statistics__percent">52%</p>
                     </div>
-                    <p class="statistics__percent">21%</p>
-                  </div>
-                  <div class="statistics__item">
-                    <img class="statistics__img" src="assets/icons/Travels.svg" alt="">
-                    <div class="staistics__line">
-                      <div class="statistics__line_item"></div>
-                      <div class="statistics__line_text">
-                        Travels
+                    <div class="statistics__item">
+                      <div class="statistics__img_wrapper statistics__img_electronis">
+                        <img class="statistics__img" src="assets/icons/Electronics.svg" alt="">
+
                       </div>
+                      <div class="statistics__line">
+                        <div class="statistics__line_item"></div>
+                        <div class="statistics__line_item-2"></div>
+                        <div class="statistics__line_text">
+                          Electronics
+                        </div>
+                      </div>
+                      <p class="statistics__percent">21%</p>
                     </div>
-                    <p class="statistics__percent">74%</p>
+                    <div class="statistics__item">
+                      <div class="statistics__img_wrapper statistics__img_travels">
+                        <img class="statistics__img" src="assets/icons/Travels.svg" alt="">
+
+                      </div>
+                      <div class="statistics__line">
+                        <div class="statistics__line_item"></div>
+                        <div class="statistics__line_item-3"></div>
+                        <div class="statistics__line_text">
+                          Travels
+                        </div>
+                      </div>
+                      <p class="statistics__percent">74%</p>
+                    </div>
                   </div>
                 </div>
               </section>
               <div class="transaction-loan">
-                <section class="transaction">
-                  <div class="transaction__inner">
-                    <h3 class="title">New transaction</h3>
-                    <div class="transaction__content">
-                      <div class="transaction__user">
-                        <div class="transaction__user_item transaction__user_ann">
-                          <img class="user__img" src="assets/icons/user-ann.svg" alt="">
-                          <p class="transaction__user_text">
-                            Ann
-                          </p>
+                <div class="transaction-loan__inner">
+                  <section class="transaction">
+                    <div class="transaction__inner">
+                      <h3 class="title">New transaction</h3>
+                      <div class="transaction__content">
+                        <div class="transaction__user">
+                          <div class="transaction__user_item transaction__user_ann">
+                            <div class="user__img_wrapper">
+                              <img class="user__img" src="assets/icons/user-ann.svg" alt="">
+                            </div>
+                            <p class="transaction__user_text">
+                              Ann
+                            </p>
+                          </div>
+                          <div class="transaction__user_item user__monica">
+                            <div class="user__img_wrapper">
+                              <img class="user__img" src="assets/icons/user-monica.svg" alt="">
+                            </div>
+                            <p class="transaction__user_text">
+                              Monica
+                            </p>
+                          </div>
+                          <div class="transaction__user_item user__john">
+                            <div class="user__img_wrapper">
+                              <img class="user__img" src="assets/icons/user-john.svg" alt="">
+                            </div>
+                            <p class="transaction__user_text">
+                              John
+                            </p>
+                          </div>
+                          <div class="transaction__user_item user__mike">
+                            <div class="user__img_wrapper">
+                              <img class="user__img" src="assets/icons/user-mike.svg" alt="">
+                            </div>
+                            <p class="transaction__user_text">
+                              Mike
+                            </p>
+                          </div>
+                          <div class="transaction__user_item user__mia">
+                            <div class="user__img_wrapper">
+                              <img class="user__img" src="assets/icons/user-mia.svg" alt="">
+                            </div>
+                            <p class="transaction__user_text">
+                              Mia
+                            </p>
+                          </div>
+                          <div class="transaction__user_item user__add-new">
+                            <div class="user__img_wrapper">
+                              <img class="user__img" src="assets/icons/user-plus-circle.svg" alt="">
+                            </div>
+                            <p class="transaction__user_text transaction__user_add">
+                              Add New
+                            </p>
+                          </div>
                         </div>
-                        <div class="transaction__user_item user__monica">
-                          <img class="user__img" src="assets/icons/user-monica.svg" alt="">
-                          <p class="transaction__user_text">
-                            Monica
-                          </p>
-                        </div>
-                        <div class="transaction__user_item user__john">
-                          <img class="user__img" src="assets/icons/user-john.svg" alt="">
-                          <p class="transaction__user_text">
-                            John
-                          </p>
-                        </div>
-                        <div class="transaction__user_item user__mike">
-                          <img class="user__img" src="assets/icons/user-mike.svg" alt="">
-                          <p class="transaction__user_text">
-                            Mike
-                          </p>
-                        </div>
-                        <div class="transaction__user_item user__mia">
-                          <img class="user__img" src="assets/icons/user-mia.svg" alt="">
-                          <p class="transaction__user_text">
-                            Mia
-                          </p>
-                        </div>
-                        <div class="transaction__user_item user__add-new">
-                          <img class="user__img" src="assets/icons/user-plus-circle.svg" alt="">
-                          <p class="transaction__user_text transaction__user_add">
-                            Add New
-                          </p>
+                        <div class="tarnsaction__send">
+                          <form class="form" action="">
+                            <input class="input" placeholder="0                    $" type="text">
+                            <button class="button transaction__btn">
+                              Send the transfer
+                            </button>
+                          </form>
                         </div>
                       </div>
-                      <div class="tarnsaction__send">
-                        <form class="form" action="">
-                          <input class="input" type="text">
-                          <button class="button transaction__btn">
-                            Send the transfer
-                          </button>
-                        </form>
-                      </div>
-                    </div>
 
-                  </div>
-                </section>
-                <section class="loan">
-                  <div class="loan__inner">
-                    <h3 class="title loan__title">
-                      Get great
-                      loan!
-                    </h3>
-                  </div>
-                </section>
+                    </div>
+                  </section>
+                  <section class="loan">
+                    <div class="loan__inner">
+                      <h3 class="title loan__title">
+                        Get great
+                        loan!
+                      </h3>
+                    </div>
+                  </section>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </main>
+      </main>
 
+    </div>
   </div>
 </body>
 
